@@ -1,11 +1,15 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // rename title 
+    document.title = 'Космическая одиссея';
 
-    let div = document.createElement('div');
     // div parrent
-    div.innerText = '1 div';
-    div.setAttribute('style', 'color: white; display:grid; max-width: 320px;  min-width: 1000px; margin: 0 auto;');
-    document.body.appendChild(div);
-
+    const DIV_PARRENT = document.createElement('div');
+    DIV_PARRENT.innerText = 'Ocтавте заявку на участие в космической экспедиции';
+    DIV_PARRENT.setAttribute('class', 'DIV_PARRENT');
+    DIV_PARRENT.setAttribute('style', 'color: white; display:grid; max-width: 320px;  min-width: 1000px; margin: 0 auto;');
+    document.body.appendChild(DIV_PARRENT);
+    let ID_DIV_PARRENT = DIV_PARRENT.getAttribute('class');
+    
     // body
     document.body.setAttribute('style', 'background: url(https://images.wallpaperscraft.ru/image/planeta_kratery_kosmos_svet_61032_1600x900.jpg) no-repeat fixed; background-size: cover;)');
     
